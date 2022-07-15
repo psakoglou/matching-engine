@@ -11,10 +11,10 @@ for validity and creates a new order.
 Then the Gateway forwards this new order to the matching engine,
 which executes it. Depending on the input order, the matching engine
 can execute the following:
-BUY/SELL 
-MODIFY
-CANCEL
-PRINT
+* BUY/SELL 
+* MODIFY
+* CANCEL
+* PRINT
 
 More specifically, the matching engine can insert a new BUY/SELL order
 to the order book for execution, can modify an existing order in the book 
@@ -43,17 +43,17 @@ Only the following commands (in any combinations) with that specific
 format are legal input. All other commands will be ignored by the engine
 
 e.g.
-SIDE ORDER_TYPE PRICE QUANTITY ORDER_ID
-MODIFY ORDER_ID SIDE PRICE QUANTITY
-CANCEL ORDER_ID
-PRINT
+* SIDE ORDER_TYPE PRICE QUANTITY ORDER_ID
+* MODIFY ORDER_ID SIDE PRICE QUANTITY
+* CANCEL ORDER_ID
+* PRINT
 
 where
-SIDE: ["BUY", "SELL"]
-ORDER_TYPE: ["IOC", "GFD"]
-PRICE: [signed long long]
-QUANTITY: [signed long long]
-ORDER_ID: [string]
+* SIDE: ["BUY", "SELL"]
+* ORDER_TYPE: ["IOC", "GFD"]
+* PRICE: [signed long long]
+* QUANTITY: [signed long long]
+* ORDER_ID: [string]
 
 See test/*.in contents for input examples
 
