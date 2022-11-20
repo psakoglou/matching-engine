@@ -27,7 +27,7 @@ in the book or when an existing order is modified.
 
 # Build
 
-g++ -std=c++11 -O3 cpp/* include/* -o meng 
+g++ -std=c++11 -O3 cpp/* -o meng 
 
 
 # Run
